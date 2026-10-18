@@ -55,6 +55,14 @@ Results for the selected seven-feature model configurations:
 - The tested LSTM architecture was less competitive with the limited training sample.
 - Forecast accuracy varied by time of day, with lower errors at night.
 
+## Forecast Visualization
+
+Actual prices versus XGBoost forecasts for the first seven test days.
+
+![Actual electricity prices versus XGBoost forecasts](data/results/XGBoost_forecast_plot.png)
+
+The model follows the broad intraday pattern but underestimates some sharp price spikes.
+
 ## Limitations
 
 The evaluation covers only 44 winter days. Model configurations were compared and selected using the same evaluation period, without a separate validation set. No formal statistical significance tests were performed.
